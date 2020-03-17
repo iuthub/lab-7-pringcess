@@ -1,13 +1,11 @@
 <?php  
-
 include('connection.php');
-
 ?>
-
+	
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>My Blog - Registration Form</title>
+			<title>My Blog - Registration Form</title>
 		<link href="style.css" type="text/css" rel="stylesheet" />
 	</head>
 	
@@ -16,7 +14,7 @@ include('connection.php');
 
 		<h2>User Details Form</h2>
 		<h4>Please, fill below fields correctly</h4>
-		<form action="register.php" method="post">
+		<form action="" method="post">
 				<ul class="form">
 					<li>
 						<label for="username">Username</label>
