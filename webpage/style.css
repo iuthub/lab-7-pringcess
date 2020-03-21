@@ -81,3 +81,13 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}

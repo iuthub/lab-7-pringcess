@@ -1,23 +1,22 @@
-<?php 
- 
-include('index.php');
+<?php  
+
 include('connection.php');
- header(’Location: index.php’);
+
 ?>
-	
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-			<title>My Blog - Registration Form</title>
+		<title>My Blog - Registration Form</title>
 		<link href="style.css" type="text/css" rel="stylesheet" />
 	</head>
 	
 	<body>
-		<?php  ?>
+		<?php include('header.php'); ?>
 
 		<h2>User Details Form</h2>
 		<h4>Please, fill below fields correctly</h4>
-		<form name="ss" action="index.php" method="post">
+		<form action="index.php" method="post">
 				<ul class="form">
 					<li>
 						<label for="username">Username</label>
@@ -40,10 +39,9 @@ include('connection.php');
 						<input type="password" name="confirm_pwd" id="confirm_pwd" required />
 					</li>
 					<li>
-						<input type="submit" name="Submit" id="Submit" value="Submit" />
-					   Already registered? <a href="index.php">Login</a>
+						<input type="submit" value="Submit" name="Submit" /> &nbsp; Already registered? <a href="index.php">Login</a>
 					</li>
 				</ul>
-			</form>
+		</form>
 	</body>
 </html>
