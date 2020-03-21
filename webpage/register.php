@@ -1,5 +1,8 @@
-<?php  
+<?php 
+ 
+include('index.php');
 include('connection.php');
+ header(’Location: index.php’);
 ?>
 	
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -10,11 +13,11 @@ include('connection.php');
 	</head>
 	
 	<body>
-		<?php include('header.php'); ?>
+		<?php  ?>
 
 		<h2>User Details Form</h2>
 		<h4>Please, fill below fields correctly</h4>
-		<form action="" method="post">
+		<form name="ss" action="index.php" method="post">
 				<ul class="form">
 					<li>
 						<label for="username">Username</label>
@@ -37,9 +40,10 @@ include('connection.php');
 						<input type="password" name="confirm_pwd" id="confirm_pwd" required />
 					</li>
 					<li>
-						<input type="submit" value="Submit" /> &nbsp; Already registered? <a href="index.php">Login</a>
+						<input type="submit" name="Submit" id="Submit" value="Submit" />
+					   Already registered? <a href="index.php">Login</a>
 					</li>
 				</ul>
-		</form>
+			</form>
 	</body>
 </html>
